@@ -1,17 +1,20 @@
 <head>
-	<link rel="stylesheet" href="index.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 	<script type="text/javascript" src="index.js"></script>
+	<link rel="stylesheet/less" type="text/css" href="styles.less" />
+	<script src="https://cdn.jsdelivr.net/npm/less"></script>
 </head>
 <body>
+	<input type="checkbox" id="isHeaderHidden" />
 	<header>
-		<input type="number" id="rows" />
-		<input type="number" id="columns" />
+		<input type="text" id="beforeTxt" value="r." />
+		[firstNumber]
+		<input type="text" id="middleTxt" value="." />
+		[secondNumber]
+		<input type="text" id="afterTxt" value=".mca" />
+		<input type="file" id="filepicker" multiple />
+		add :
+		<input type="file" id="filepickerAdd" multiple />
 	</header>
-	<ul class="container">
-		<li class="row">
-			<ul class="inside">
-				<li class="case"></li>
-			</ul>
-		</li>
-	</ul>
+	<ul class="container"></ul>
 </body>
